@@ -3,10 +3,12 @@
   public class SimpleContainer : IFetchDependencies
   {
     IFindFactoriesThatCanCreateDependencies factories;
+    ItemCreationExceptionFactory exception;
 
-    public SimpleContainer(IFindFactoriesThatCanCreateDependencies factories)
+    public SimpleContainer(IFindFactoriesThatCanCreateDependencies factories, ItemCreationExceptionFactory exception)
     {
       this.factories = factories;
+        this.exception = exception;
     }
 
     public Dependency an<Dependency>()
