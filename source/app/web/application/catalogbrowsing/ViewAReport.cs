@@ -3,6 +3,7 @@ using app.web.core.aspnet;
 
 namespace app.web.application.catalogbrowsing
 {
+  //I am adding a comment
   public class ViewAReport<ReportModel, Query> : ISupportAStory where Query : IQueryToFindA<ReportModel>, new()
   {
     IDisplayReports display_engine;
