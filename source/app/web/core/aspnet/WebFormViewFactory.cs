@@ -6,7 +6,14 @@ namespace app.web.core.aspnet
   {
     public IHttpHandler create_view_that_can_display<ReportModel>(ReportModel the_report)
     {
-      throw new System.NotImplementedException();
+    	IFindPathsToWebForms view_path_registry;
+
+public WebFormViewFactory(IFindPathsToWebForms view_path_registry)
+    	{
+    		
+    	}
+    	;
+
     }
   }
 }
