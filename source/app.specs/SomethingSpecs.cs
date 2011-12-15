@@ -10,7 +10,7 @@ namespace app.specs
   public class SomethingSpecs
   {
     public abstract class concern : Observes<ISupportAStory,
-                                      Something>
+                                      ViewInformation>
     {
     }
 
@@ -25,10 +25,20 @@ namespace app.specs
         sut.process(request);
 
 
-      It should_ = () =>
+      It should_ViewMainDepartmentsInTheStore_ = () =>
       {
 
       };
+
+		It should_ViewTheDepartmentsInADepartment = () =>
+    	{
+
+    	};
+
+		It should_ViewTheProductsInADepartment = () =>
+    	{
+
+    	};
 
       static IProvideDetailsToCommands request;
     }

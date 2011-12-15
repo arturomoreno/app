@@ -84,6 +84,7 @@
     <Compile Include="infrastructure\Stub.cs" />
     <Compile Include="infrastructure\stubs\StubLogger.cs" />
     <Compile Include="infrastructure\stubs\StubTimer.cs" />
+    <Compile Include="web\application\catalogbrowsing\ViewInformation.cs" />
     <Compile Include="web\application\catalogbrowsing\DepartmentItem.cs" />
     <Compile Include="web\application\catalogbrowsing\IFindInformationInTheStore.cs" />
     <Compile Include="web\application\catalogbrowsing\ProductItem.cs" />
