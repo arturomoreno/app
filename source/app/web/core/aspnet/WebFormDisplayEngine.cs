@@ -4,7 +4,12 @@
   {
     public void display<Report>(Report report)
     {
-      throw new System.NotImplementedException();
+    	 ICreateWebFormViewsToDisplayReports view_factory;
+
+      public display(ICreateWebFormViewsToDisplayReports view_factory)
+    	{
+    		this.view_factory = view_factory;
+    	}
     }
   }
 }
