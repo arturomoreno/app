@@ -12,6 +12,7 @@ namespace app.infrastructure.containers.simple
 	  public DependencyFactories(IEnumerable<ICreateASingleDependency> factory_registry, FactoryMissingExceptionFactory exceptionfactory)
 	  {
 		  this.factory_registry = factory_registry;
+	      this.exceptionfactory = exceptionfactory;
 	  }
 
 	  public ICreateASingleDependency get_factory_that_can_create(Type dependency)
@@ -22,7 +23,7 @@ namespace app.infrastructure.containers.simple
           }
 	  	catch(Exception ex)
 	  	{
-	  	    
+	  	    exceptionfactory(dependency);
 	  	}
 	  }
   }
