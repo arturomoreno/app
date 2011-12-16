@@ -113,6 +113,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="codekataspecs\AnagramBasicSpecs.cs" />
+    <Compile Include="codekataspecs\TextReaderSpecs.cs" />
+    <Compile Include="codekataspecs\TextWriterSpecs.cs" />
     <Compile Include="MessageGeneratorSpecs.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

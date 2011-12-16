@@ -77,11 +77,12 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="codekatas\AnagramBasic.cs" />
+    <Compile Include="codekatas\TextReader.cs" />
+    <Compile Include="codekatas\TextWriter.cs" />
     <Compile Include="MessageGenerator.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="codekatas\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

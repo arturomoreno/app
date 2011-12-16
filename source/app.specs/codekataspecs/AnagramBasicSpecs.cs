@@ -7,11 +7,11 @@ using developwithpassion.specifications.rhinomocks;
 
 namespace app.specs.codekataspecs
 {
-	[Subject(typeof(Anagaram))]
-	public class AnagramSpecs
+	[Subject(typeof(AnagramBasic))]
+	public class AnagramBasicSpecs
 	{
 
-		public class when_reading_input_words
+		public class when_reading_input
 		{
 			Establish c = () =>
 			{
@@ -25,9 +25,9 @@ namespace app.specs.codekataspecs
 
 			It should_receive_file ;
 
-			It should_iterate_through_each_line;
+			It should_confirm_connection_validity_of_file;
 
-			It should_iterate_through_each_letter_of_each_line;
+			//It should_iterate_through_each_letter_of_each_line;
 		}
 
 		
