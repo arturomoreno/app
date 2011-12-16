@@ -4,6 +4,8 @@ namespace app.tasks.startup
 {
   public class Startup
   {
+
+
     public static void run()
     {
       //startup steps can only be added once (ignore repeated adds of the same step)
@@ -11,9 +13,10 @@ namespace app.tasks.startup
       //tests are mandatory (first or after)
 
       //once finish by is called, there is no further chaining
-//      Start.by<ConfiguringInfrastructureServices>()
-//        .followed_by<ConfiguringFrontController>()
-//        .finish_by<ConfiguringQueries>();
+        //Start.by<ConfiguringInfrastructureServices>()
+        //  .followed_by<ConfiguringFrontController>()
+        //  .finish_by<ConfiguringQueries>();
     }
   }
+
 }
