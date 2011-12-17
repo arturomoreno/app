@@ -36,6 +36,25 @@ namespace app.specs
       static ICreateStartupChains chain_builder;
     }
 
+
+      public class when_providing_the_file : concern
+      {
+          Establish c = () =>
+          {
+
+          };
+
+          private Because b = () =>
+            {
+
+            };
+
+          It should_return_valid_steps = () => 
+              return result;
+
+          It should_run_steps_defined_in_file = () =>
+          return;
+      }
     public class FirstStep : IRunAStartupStep
     {
       public void run()
